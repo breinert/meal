@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Meal Planner</title>
+  <!-- modified from Florin Pop @ Free Code Camp, https://www.freecodecamp.org/news/creating-a-random-meal-generator/ -->
+</head>
+<body>
+  <div class="container">
+    <div class="row text-center">
+      <h3>
+        Feeling hungry?
+      </h3>
+      <h5>Get a random meal by clicking below</h5>
+      <button class="button-primary" id="get_random">Get meal 🍔</button>
+      <h5>Or, select a category from the drop down menu and then click go</h5>
+      <select id="get_category">
+        <option value="starter">Starter</option>
+        <option value="side">Side</option>
+        <option value="breakfast">Breakfast</option>
+        <option value="dessert">Dessert</option>
+        <option value="beef">Beef</option>
+        <option value="chicken">Chicken</option>
+        <option value="goat">Goat</option>
+        <option value="lamb">Lamb</option>
+        <option value="pasta">Pasta</option>
+        <option value="pork">Pork</option>
+        <option value="seafood">Seafood</option>
+        <option value="miscellaneous">Miscellaneous</option>
+        <option value="vegan">Vegan</option>
+        <option value="vegetarian">Vegetarian</option>
+      </select>
+      <button class="button-primary" id="go">GO!</button>
+    </div>
+    <div id="meal" class="row meal"></div>
+  </div>
+<footer>
+  Powered by <a href="https://www.themealdb.com/">TheMealDB</a>
+</footer class="footer">
+  <script src="app.js"></script>
+</body>
+</html>
